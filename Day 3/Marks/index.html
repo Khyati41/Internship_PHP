@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <title>Marks</title>
+        <link rel="stylsheet" href="style.css" type="text/css"> 
+
+        <style>
+            :root {
+            font-size: 100%;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        body{
+            margin: 0;
+            padding: 0;
+
+            --primary-blue: #233975;
+            font-weight: 500;
+        }
+
+        h1{
+            font-size: 2.25rem;
+        }
+
+        .display{
+
+            width: 40%;
+            padding: 1rem;
+            height: 10%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .display .group1{
+            display: flex;
+            flex-direction: row;
+        }
+
+        .display .group2{
+            display: flex;
+            flex-direction: row;
+        }
+
+        form .maths, .science{
+            margin-right: 1rem;
+        }
+        
+        form .input .name{
+            width: 70%;
+        }
+
+        form input[type="text"] {
+            display: block;
+            /* width: 100%; */
+            box-sizing: border-box;
+            border-radius: 8px;
+            border: 1px solid #c4c4c4;
+            margin-bottom: 1rem;
+            padding: 1em;
+            font-size: 0.875rem;
+        }
+
+        lable{
+            display: block;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        .btn{
+            height: 3rem;
+            width: 100%;
+            border-radius: 8px;
+            background: cornflowerblue;
+            border: none;
+            padding: 1rem;
+            color: white;
+        }
+        </style>
+
+    </head>
+
+    <body>
+        <section class="display">
+            <h1>Enter your marks</h1>
+            <form action="process.php" method="POST">
+                <div class="input name">
+                    <label for="name">Name</label>
+                    <input style="width:100%;"type="text" id="name" name="name" required>
+                </div>
+                <div class="group1">
+                    <div class="input maths">
+                        <label for="maths">Maths</label>
+                        <input type="text" id="maths" name="maths" max="100" required>
+                    </div>
+                    <div class="input eng">
+                        <label for="eng">English</label>
+                        <input type="text" id="eng" name="eng" max="100" required>
+                    </div>
+                </div>
+                <div class="group2">
+                    <div class="input science">
+                        <label for="science">Science</label>
+                        <input type="text" id="science" name="science" max="100" required>
+                    </div>
+                    <div class="input history">
+                        <label for="history">History</label>
+                        <input type="text" id="history" name="history" max="100" required>
+                    </div>
+                </div>
+                <div class="input hindi group3">
+                    <label for="hindi">Hindi</label>
+                    <input type="text" id="hindi" name="hindi" max="100" required>
+                </div>
+                <button class="btn">Submit</button>
+            </form>
+        </section>
+    </body>
+</html>

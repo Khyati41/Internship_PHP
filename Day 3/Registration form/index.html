@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>SignUp</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' href='style.css'>
+</head>
+<body>
+    <div class="split-screen">
+        <div class="left">
+            <section class="copy">
+                <h1>Explore your creativity</h1>
+                <p>Over 1000 courses taught by real creatives</p>
+            </section>
+        </div>
+        <div class="right">
+            <form action="process.php" method="POST">
+            <section class="copy">
+                <h2>Sign Up</h2>
+                <div class="login-container">
+                    <p>Already have account? <a href="#"><strong>Log In</strong></a></p>
+                </div>
+                </section>
+                    <div class="input-container name">
+                        <lable for="fname">Full Name</lable>
+                        <input id="fname" name="fname" type="text" required>
+                    </div>
+
+                    <div class="input-container email">
+                        <lable for="email">Email</lable>
+                        <input id="email" name="email" type="email" required>
+                    </div>
+
+                    <div class="input-container password">
+                        <lable for="pass">Password</lable>
+                        <input id="pass" name="pass" type="password" placeholder="Must be at least 8 characters" required>
+                    </div>
+
+                    <div class="input-container phone">
+                        <lable for="phone">Phone Number</lable>
+                            <input id="phone" name="phone" type="number" maxlength="10" required>
+                    </div>
+                        
+                    <button class="signup-btn" name="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
