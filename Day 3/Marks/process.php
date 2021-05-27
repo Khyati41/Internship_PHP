@@ -7,9 +7,7 @@
     $history=$_POST['history'];
     $hindi=$_POST['hindi'];
 
-    //$sum=$maths+$eng+$science+$history+$hindi;
-
-    $sum=360;
+    $sum=$maths+$eng+$science+$history+$hindi;
 ?>
 
 <h2>Hello <?php echo $name;?></h2>
